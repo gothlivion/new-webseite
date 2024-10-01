@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friedrich Bader | Fachinformatiker Anwendungsentwicklung</title>
+    <link rel="stylesheet" href="contact.css">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'de'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Friedrich Bader</h1>
+        <h2>Fachinformatiker Anwendungsentwicklung</h2>
+        <h3>"Solange dieser Satz hier steht, bin ich offen für spannende Praktikumsangebote.“</h3>
+        <button id="theme-toggle">Light Mode</button><br><br>
+        <!-- Uhranzeige -->
+        <div id="uhr-container" style="font-size: 18px; font-weight: bold;">
+            <span id="uhr"></span> - Cologne, Germany
+        </div>
+        <!-- Google Translate Widget -->
+        <div id="google_translate_element"></div><br><hr><br>
+    </header>
+    <br>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="hauptseite.html">Hauptseite</a></li>
+            <li><a href="experience.html">Berufserfahrung</a></li>
+            <li><a href="education.html">Ausbildung</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="lzk.html">LZK</a></li>
+            <li><a href="projects.html">Projekte</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+    <br>
+
+    <h2>Kontakt</h2>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="content">
+            <ul>
+                <li>Telefon: +49 (0) 155 / 600 79 497</li>
+                <li>
+                    <div style="display: flex; justify-content: center;">
+                        <a href="tel:+4915560079497">Jetzt anrufen</a>
+                    </div>
+                </li>
+                <li>
+                    <div style="display: flex; justify-content: center;">
+                        <a href="mailto:gothlivion@gmail.com">E-Mail: gothlivion@gmail.com</a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Kontaktformular -->
+            <h2>Kontaktformular</h2>
+            <form action="send_contact.php" method="POST">
+                <label for="name">Name:</label><br><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">E-Mail:</label><br><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Nachricht:</label><br><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                
+                <button type="submit">Nachricht senden</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Neues Links-Segment -->
+    <section class="links">
+        <h2>LINKS</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/friedrich-bader-0a9682308/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.xing.com/profile/Friedrich_Bader6/web_profiles?expandNeffi=true" target="_blank">Xing</a></li>
+            <li><a href="https://main--friedrichbader.netlify.app/" target="_blank">Meine erste Seite</a></li>
+            <li><a href="https://friedrichbader.jimdofree.com/" target="_blank">Meine Jimdo Seite</a></li>
+            <li><a href="https://github.com/gothlivion" target="_blank">GitHub</a></li>
+            <li><a href="https://ra88it.de" target="_blank">Stephan Pfeifer</a></li>
+        </ul>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div style="text-align: center; margin: 20px 0;">
+        <button id="onclick" onclick="scrollToTop()">Nach oben scrollen</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Friedrich Bader. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+    <script>
+        function aktualisiereUhr() {
+            // Erstelle ein neues Datum-Objekt
+            var jetzt = new Date();
+            // Hole die Stunden, Minuten und Sekunden
+            var stunden = jetzt.getHours();
+            var minuten = jetzt.getMinutes();
+            var sekunden = jetzt.getSeconds();
+            
+            // Formatiere die Zeit (mit führenden Nullen)
+            minuten = minuten < 10 ? '0' + minuten : minuten;
+            sekunden = sekunden < 10 ? '0' + sekunden : sekunden;
+    
+            // Zeige die Uhrzeit im Uhr-Div an
+            var uhrAnzeige = stunden + ':' + minuten + ':' + sekunden;
+            document.getElementById('uhr').textContent = uhrAnzeige;
+        }
+    
+        // Funktion sofort aufrufen, um die Zeit sofort zu zeigen
+        aktualisiereUhr();
+        // Aktualisiere die Zeit jede Sekunde
+        setInterval(aktualisiereUhr, 1000);
+    </script>
+
+</body>
+</html>

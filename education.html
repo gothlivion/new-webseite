@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friedrich Bader | Fachinformatiker Anwendungsentwicklung</title>
+    <link rel="stylesheet" href="education.css">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'de'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function toggleContent(event) {
+            const nextContent = event.target.nextElementSibling;
+            while (nextContent && nextContent.classList.contains('content')) {
+                nextContent.style.display = nextContent.style.display === 'block' ? 'none' : 'block';
+                nextContent = nextContent.nextElementSibling;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const headings = document.querySelectorAll('.absatz');
+            headings.forEach(heading => {
+                heading.addEventListener('click', toggleContent);
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Friedrich Bader</h1>
+        <h2>Fachinformatiker Anwendungsentwicklung</h2>
+        <h3>"Solange dieser Satz hier steht, bin ich offen für spannende Praktikumsangebote.“</h3>
+        <button id="theme-toggle">Light Mode</button>
+        <br><br>
+        <!-- Uhranzeige -->
+        <div id="uhr-container" style="font-size: 18px; font-weight: bold;">
+            <span id="uhr"></span> - Cologne, Germany
+        </div>
+        <!-- Google Translate Widget -->
+        <div id="google_translate_element"></div><br><hr><br>
+
+    </header>
+    <br>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="hauptseite.html">Hauptseite</a></li>
+            <li><a href="experience.html">Berufserfahrung</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="lzk.html">LZK</a></li>
+            <li><a href="projects.html">Projekte</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+    <br>
+
+    <h2>Ausbildung</h2>
+
+    <section class="erfahrung">
+        <h3 class="absatz">2024 - 2026 GFN, KÖLN, Fachinformatiker Anwendungsentwicklung</h3>
+        <p class="content">Im Januar 2024 habe ich endlich meine Umschulung zum Fachinformatiker für Anwendungsentwicklung begonnen. Nach mehr als einem halben Jahr intensiver Diskussionen und Prüfungen seitens des Arbeitsamtes erhielt ich schließlich grünes Licht für die Umschulung. Glücklicherweise hatte ich sehr nette und verständnisvolle Berater/innen beim Arbeitsamt. Am Ende erhielt ich mehrere persönliche Angebote von verschiedenen Bildungsträgern, darunter sowohl für App-Entwicklung als auch für Fachinformatik.</p>
+        <p class="content">Ich entschied mich für die GFN, da diese im Vergleich zu anderen Anbietern über eine modernere Ausstattung verfügt und zudem die Möglichkeit bietet, zwei Tage pro Woche remote von zu Hause aus zu lernen. In unserer Klasse herrscht eine sehr gemütliche und angenehme Atmosphäre, und die Gruppe ist angenehm klein.</p>
+        <p class="content">Ich bin insgesamt sehr zufrieden mit der Umschulung. Natürlich gibt es wie überall Raum für Verbesserungen, aber größtenteils bin ich sehr zufrieden. Ich hoffe, meine IHK-Prüfung erfolgreich abzuschließen.</p>
+        <hr><br>
+        <h3 class="absatz">2007 DEKRA, EUSKIRCHEN, Kraftfahrer mit ADR-Schein</h3>
+        <p class="content">Nachdem die Firma, bei der ich gearbeitet habe, insolvent ging und es in meinem Dorf kaum Möglichkeiten gab, eine neue Arbeitsstelle zu finden, stand ich vor der Entscheidung, meine berufliche Laufbahn zu ändern. Ich entschied mich für den Beruf des Berufskraftfahrers, da ich seit meiner Jugend davon geträumt hatte, Fahrer zu werden. Außerdem bereitete es mir viel Freude, mit einem eigenen PKW durch die Gegend zu fahren. Meine Begeisterung für das Fahren, die Möglichkeit einer kurzen Umschulung sowie die guten Jobchancen und relativ hohen Verdienstmöglichkeiten waren die entscheidenden Faktoren für meine Wahl.</p>
+        <hr><br>
+        <h3 class="absatz">2004 M.A.U.S., KÖLN, Lebensrettende Sofortmaßnahmen</h3>
+        <p class="content">Erwerb grundlegender Kenntnisse und Fähigkeiten in Erste Hilfe, Herz-Lungen-Wiederbelebung (CPR) und Notfallmanagement.</p>
+        <p class="content">Erlernen der Anwendung von Automatisierten Externen Defibrillatoren (AED).</p>
+        <p class="content">Training in der Wundversorgung, Umgang mit Schock und Bewusstlosigkeit, sowie der Behandlung von Knochenbrüchen und anderen Verletzungen.</p>
+        <hr><br>
+        <h3 class="absatz">2004 TERTIA, KÖLN, Word, Excel, PowerPoint, Multimedia und Internet, Schwerpunkt EDV</h3>
+        <p class="content">Microsoft Word: Fortgeschrittene Funktionen und Anwendungen, Dokumentenformatierung, Erstellung von Vorlagen und automatisierten Funktionen.</p>
+        <p class="content">Microsoft Excel: Erstellung und Verwaltung von Tabellenkalkulationen, Datenanalyse, Nutzung von Formeln und Funktionen, Pivot-Tabellen und Diagrammen.</p>
+        <p class="content">Microsoft PowerPoint: Entwicklung von Präsentationen, Nutzung von Folienlayouts, Animationen, Übergängen und Multimedia-Integration.</p>
+        <p class="content">Multimedia: Erstellung und Bearbeitung von Medieninhalten, Integration von Bildern, Videos und Audio in Präsentationen und Dokumente.</p>
+        <p class="content">Internet: Nutzung von Webanwendungen, Online-Recherche, sichere Internetnutzung und grundlegende Kenntnisse in Web-Technologien.</p>
+        <hr><br>
+        <h3 class="absatz">2004 TÜV-AKADEMIE, KÖLN, EDV</h3>
+        <p class="content">Microsoft Office Suite: Umfassende Schulung in Word, Excel und PowerPoint, einschließlich Dokumentenerstellung, Datenmanagement und Präsentationsgestaltung.</p>
+        <p class="content">Datenbanken: Einführung in grundlegende Datenbankkonzepte und -tools.</p>
+        <p class="content">Multimedia: Grundlagen der Multimedia-Anwendungen und -Integration in Dokumenten und Präsentationen.</p>
+        <p class="content">Internet: Nutzung von Internetdiensten, Web-Browsing-Techniken und Online-Recherche.</p>
+        <hr><br>
+        <h3 class="absatz">2003 SPRACHSCHULE, KÖLN, Sprach-Intensivkurs Deutsch für junge Aussiedler</h3>
+        <p class="content">Deutschkenntnisse: Intensives Sprachtraining zur Verbesserung der Deutschkenntnisse für junge Aussiedler.</p>
+        <p class="content">Grammatik und Syntax: Vertiefung der deutschen Grammatikregeln und Satzstruktur.</p>
+        <p class="content">Kommunikation: Praktische Übungen in alltäglicher und beruflicher Kommunikation.</p>
+        <p class="content">Kulturelle Integration: Unterstützung bei der Integration in die deutsche Gesellschaft und das Verständnis kultureller Unterschiede.</p>
+        <hr><br>
+        <h3 class="absatz">1999 - 2002 BERUFSSCHULE, KARAGANDA, Kommunikationselektroniker</h3>
+        <p class="content"><strong>Ausbildung zum Radio- und Fernsehmechaniker</strong></p>
+        <p class="content">Technische Grundlagen: Ausbildung in der Wartung, Reparatur und Installation von Radio- und Fernsehtechnik.</p>
+        <p class="content">Elektronik und Funktechnik: Vertiefte Kenntnisse in Elektronik, Signalverarbeitung und Funktechnik.</p>
+        <p class="content">Fehlerdiagnose: Praktische Fähigkeiten in der Fehlerdiagnose und -behebung von Kommunikationsgeräten.</p>
+        <p class="content">Reparatur und Wartung: Erlernen von Reparaturmethoden und regelmäßiger Wartung von Geräten.</p>
+        <p class="content"><strong>Staatlich anerkannte Qualifikation</strong></p>
+        <p class="content"><strong>Industrie- und Handelskammer (IHK), Deutschland</strong></p>
+        <p class="content">Kommunikationselektroniker, Fachrichtung Funktechnik: Anerkennung der Ausbildung als Kommunikationselektroniker mit Schwerpunkt Funktechnik in Deutschland.</p>
+        <hr><br>
+        <h3 class="absatz">1993 - 1994 KOMBINAT, KARAGANDA, Grundlagen der Funk- und Fernsehmechanik</h3>
+        <p class="content">Einführung in die Funktechnik: Erlernen der Grundlagen der Funktechnologie und Signalübertragung.</p>
+        <p class="content">Fernsehtechnik: Grundlagen der Fernsehtechnik, einschließlich Aufbau und Funktionsweise von Fernsehern.</p>
+        <p class="content">Wartung und Reparatur: Praktische Übungen in der Wartung und Reparatur von Funk- und Fernsehtechnologie.</p>
+        <p class="content">Elektronische Schaltungen: Verständnis und Anwendung grundlegender elektronischer Schaltungen und Komponenten.</p>
+        <hr><br>
+        <h3 class="absatz">1986 - 1994 MITTELSCHULE, KARAGANDA, Mittlere Reife/Realschulabschluss</h3>
+        <p class="content"><strong>Mittelschule</strong></p>
+        <p class="content">Abschluss: Beendigung der 9. Klasse im Jahr 1994.</p>
+        <p class="content">Fächer: Allgemeine Schulbildung mit Schwerpunkt auf grundlegenden Fächern wie Mathematik, Naturwissenschaften, Literatur und Sprachen.</p>
+        <p class="content"><strong>Gleichwertigkeit in Deutschland</strong></p>
+        <p class="content"><strong>Industrie- und Handelskammer (IHK), Deutschland</strong></p>
+        <p class="content">Gleichstellung: Das Schulzeugnis wurde aufgrund der später absolvierten dreijährigen Ausbildung dem deutschen mittleren Schulabschluss (Realschulabschluss) gleichgestellt.</p>
+    </section>
+    <br>
+
+     <!-- Neues Links-Segment -->
+     <section class="links">
+        <h2>LINKS</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/friedrich-bader-0a9682308/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.xing.com/profile/Friedrich_Bader6/web_profiles?expandNeffi=true" target="_blank">Xing</a></li>
+            <li><a href="https://main--friedrichbader.netlify.app/" target="_blank">Meine erste Seite</a></li>
+            <li><a href="https://friedrichbader.jimdofree.com/" target="_blank">Meine Jimdo Seite</a></li>
+            <li><a href="https://github.com/gothlivion" target="_blank">GitHub</a></li>
+            <li><a href="https://ra88it.de" target="_blank">Stephan Pfeifer</a></li>
+        </ul>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div style="text-align: center; margin: 20px 0;">
+        <button id="onclick" onclick="scrollToTop()">Nach oben scrollen</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Friedrich Bader. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="education.js"></script>
+    <script>
+        function aktualisiereUhr() {
+            // Erstelle ein neues Datum-Objekt
+            var jetzt = new Date();
+            // Hole die Stunden, Minuten und Sekunden
+            var stunden = jetzt.getHours();
+            var minuten = jetzt.getMinutes();
+            var sekunden = jetzt.getSeconds();
+            
+            // Formatiere die Zeit (mit führenden Nullen)
+            minuten = minuten < 10 ? '0' + minuten : minuten;
+            sekunden = sekunden < 10 ? '0' + sekunden : sekunden;
+    
+            // Zeige die Uhrzeit im Uhr-Div an
+            var uhrAnzeige = stunden + ':' + minuten + ':' + sekunden;
+            document.getElementById('uhr').textContent = uhrAnzeige;
+        }
+    
+        // Funktion sofort aufrufen, um die Zeit sofort zu zeigen
+        aktualisiereUhr();
+        // Aktualisiere die Zeit jede Sekunde
+        setInterval(aktualisiereUhr, 1000);
+    </script>
+</body>
+</html>

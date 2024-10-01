@@ -1,0 +1,358 @@
+/* Basis-Stil für alle Geräte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #000; /* Schwarz */
+    color: #fff; /* Weiß */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #ff0009; /* Rot */
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #ff0000; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+button {
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: #ff0000; /* Rot */
+    color: #fff; /* Weiß */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: blue; 
+    color: #000; /* Schwarz */
+    transform: scale(1.05);
+}
+
+/* Styling for Google Translate Dropdown */
+#google_translate_element {
+    margin-top: 2rem;
+}
+
+.goog-te-combo {
+    background-color: #000;
+    color: #ffd700;
+    border: 0.2rem solid #ffd700;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.goog-te-combo:hover {
+    background-color: #ffd700;
+    color: #000;
+}
+
+/* Google Translate Bar ausblenden */
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+/* Entfernt das Padding, das die Leiste normalerweise erzeugt */
+body {
+    top: 0rem !important;
+}
+
+hr {
+    border: 1px solid yellow; /* Setzt die Farbe des Rahmens auf Gelb */
+}
+
+/* Navigation */
+nav {
+    background-color: #000;
+    padding: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 5px 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffd700;
+    padding: 10px 20px;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffd700;
+    color: #000;
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: blue;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Responsive Styles für Navigation */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        display: none; /* Start hidden */
+    }
+
+    .navbar.show {
+        display: flex; /* Show when toggle is clicked */
+    }
+
+    .navbar li {
+        margin: 20px 0; /* Increased vertical margin between items */
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+}
+
+.erfahrung {
+    max-width: 800px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ffd700; /* Gold */
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.4s ease;
+}
+
+.erfahrung h3 {
+    font-size: 1.2rem;
+    color: #ff0000; /* Rot */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.erfahrung p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Versteckt alle <p> Elemente standardmäßig */
+.content {
+    display: none; 
+}
+
+/* Stil für die h3-Elemente */
+.absatz {
+    cursor: pointer; /* Zeigt an, dass das Element klickbar ist */
+    color: #FFD700; /* Goldene Farbe für die Überschrift */
+    margin: 10px 0; /* Abstand nach oben und unten */
+}
+
+/* Verstecke die ul standardmäßig */
+.hidden {
+    display: none; /* Listenelemente sind versteckt */
+}
+
+/* Stil für Links */
+.links h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none; /* Keine Aufzählungszeichen */
+    padding: 0; /* Kein Padding */
+    text-align: center; /* Zentriert den Text innerhalb der Liste */
+}
+
+ul li {
+    margin: 40px 0; /* Abstand zwischen den Links */
+}
+
+ul li a {
+    text-decoration: none; /* Keine Unterstreichung */
+    color: #ffd700; /* Goldene Schriftfarbe */
+    font-size: 1.2rem; /* Schriftgröße */
+    padding: 10px 15px; /* Polsterung um die Links */
+    border: 2px solid #ffd700; /* Goldene Umrandung */
+    border-radius: 5px; /* Abgerundete Ecken */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Übergangseffekte */
+}
+
+ul li a:hover {
+    background-color: #ffd700; /* Hintergrundfarbe beim Hover */
+    color: #000; /* Textfarbe beim Hover */
+}
+
+footer {
+    padding: 20px;
+    background-color: #222; /* Dunkleres Schwarz */
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Light-Mode-Styles */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode header h1, body.light-mode header h2 {
+    color: blue; 
+}
+
+body.light-mode hr {
+    border: 1px solid blue; /* Setzt die Farbe des Rahmens auf Blau */
+}
+
+body.light-mode .berufserfahrung h3 {
+    color: blue; 
+}
+
+body.light-mode .goog-te-combo {
+    color: blue;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 0.2rem solid blue;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+body.light-mode .goog-te-combo:hover {
+    background-color: blue;
+    color: #000;
+}
+
+body.light-mode button#theme-toggle {
+    background-color: blue;
+    color: #000;
+    border: blue;
+}
+
+body.light-mode button#theme-toggle:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+body.light-mode nav {
+    background-color: #fff;
+}
+
+body.light-mode .navbar a  {
+    color: blue; /* Vollständig schwarzer Text */
+    border-color: blue;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .navbar a:hover {
+    background-color: blue;
+    color: black;
+}
+
+body.light-mode h2 {
+    color: blue;
+}
+
+/* Light-Mode-Styles für .about */
+body.light-mode .erfahrung {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    border-color: blue; /* Rot für Abwechslung im Light-Mode */
+    box-shadow: 0 0 20px blue, 0 0 40px blue;
+}
+
+body.light-mode .erfahrung h3 {
+    color: blue;
+}
+
+body.light-mode .links h2 {
+    color: blue; 
+}
+
+body.light-mode .links a {
+    color: blue; /* Vollständig schwarzer Text */
+    border-color: blue;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .links a:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+body.light-mode ul li a {
+    text-decoration: none; /* Keine Unterstreichung */
+    color: blue; /* Goldene Schriftfarbe */
+    font-size: 1.2rem; /* Schriftgröße */
+    padding: 10px 15px; /* Polsterung um die Links */
+    border: 2px solid blue; /* Goldene Umrandung */
+    border-radius: 5px; /* Abgerundete Ecken */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Übergangseffekte */
+}
+
+body.light-mode ul li a:hover {
+    background-color: blue; /* Hintergrundfarbe beim Hover */
+    color: #000; /* Textfarbe beim Hover */
+}
+
+body.light-mode button#onclick {
+    background-color: blue;
+    color: #000;
+}
+
+body.light-mode button#onclick:hover {
+    background-color: #ff0000;
+    color: #fff;
+}

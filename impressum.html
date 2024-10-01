@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friedrich Bader | Fachinformatiker Anwendungsentwicklung</title>
+    <link rel="stylesheet" href="impressum.css">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'de'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Friedrich Bader</h1>
+        <h2>Fachinformatiker Anwendungsentwicklung</h2>
+        <h3>"Solange dieser Satz hier steht, bin ich offen für spannende Praktikumsangebote.“</h3>
+        <button id="theme-toggle">Light Mode</button><br><br>
+        <!-- Uhranzeige -->
+        <div id="uhr-container" style="font-size: 18px; font-weight: bold;">
+            <span id="uhr"></span> - Cologne, Germany
+        </div>
+        <!-- Google Translate Widget -->
+        <div id="google_translate_element"></div><br><hr><br>
+
+    </header>
+    <br>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="hauptseite.html">Hauptseite</a></li>
+            <li><a href="experiense.html">Berufserfahrung</a></li>
+            <li><a href="education.html">Ausbildung</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="lzk.html">LZK</a></li>
+            <li><a href="projects.html">Projekte</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+    <br>
+
+    <h2>Impressum</h2>
+
+    <section class="erfahrung">
+        <h3 class="absatz">Angaben gemäß § 5 TMG</h3>
+        <p class="content">Friedrich Bader</p>
+        <p class="content">Köln</p>
+        <p class="content">Deutschland</p>
+        <p class="content">E-Mail: gothlivion@gmail.com</p>
+        <hr><br>
+        <h3 class="absatz">Haftungsausschuss:</h3>
+        <p class="content"><strong>Haftung für Inhalte</strong></p>
+        <p class="content">Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+        <p class="content">Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+        <p class="content"><strong>Urheberrecht</strong></p>
+        <p class="content">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
+    </section>
+    <br>
+
+     <!-- Neues Links-Segment -->
+     <section class="links">
+        <h2>LINKS</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/friedrich-bader-0a9682308/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.xing.com/profile/Friedrich_Bader6/web_profiles?expandNeffi=true" target="_blank">Xing</a></li>
+            <li><a href="https://main--friedrichbader.netlify.app/" target="_blank">Meine erste Seite</a></li>
+            <li><a href="https://friedrichbader.jimdofree.com/" target="_blank">Meine Jimdo Seite</a></li>
+            <li><a href="https://github.com/gothlivion" target="_blank">GitHub</a></li>
+            <li><a href="https://ra88it.de" target="_blank">Stephan Pfeifer</a></li>
+        </ul>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div style="text-align: center; margin: 20px 0;">
+        <button id="onclick" onclick="scrollToTop()">Nach oben scrollen</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Friedrich Bader. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="experience.js"></script>
+    <script>
+        function aktualisiereUhr() {
+            // Erstelle ein neues Datum-Objekt
+            var jetzt = new Date();
+            // Hole die Stunden, Minuten und Sekunden
+            var stunden = jetzt.getHours();
+            var minuten = jetzt.getMinutes();
+            var sekunden = jetzt.getSeconds();
+            
+            // Formatiere die Zeit (mit führenden Nullen)
+            minuten = minuten < 10 ? '0' + minuten : minuten;
+            sekunden = sekunden < 10 ? '0' + sekunden : sekunden;
+    
+            // Zeige die Uhrzeit im Uhr-Div an
+            var uhrAnzeige = stunden + ':' + minuten + ':' + sekunden;
+            document.getElementById('uhr').textContent = uhrAnzeige;
+        }
+    
+        // Funktion sofort aufrufen, um die Zeit sofort zu zeigen
+        aktualisiereUhr();
+        // Aktualisiere die Zeit jede Sekunde
+        setInterval(aktualisiereUhr, 1000);
+    </script>
+    
+</body>
+</html>

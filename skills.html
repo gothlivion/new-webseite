@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friedrich Bader | Fachinformatiker Anwendungsentwicklung</title>
+    <link rel="stylesheet" href="skills.css">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'de'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function toggleContent(event) {
+            const nextContent = event.target.nextElementSibling;
+            while (nextContent && nextContent.classList.contains('content')) {
+                nextContent.style.display = nextContent.style.display === 'block' ? 'none' : 'block';
+                nextContent = nextContent.nextElementSibling;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const headings = document.querySelectorAll('.absatz');
+            headings.forEach(heading => {
+                heading.addEventListener('click', toggleContent);
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Friedrich Bader</h1>
+        <h2>Fachinformatiker Anwendungsentwicklung</h2>
+        <h3>"Solange dieser Satz hier steht, bin ich offen für spannende Praktikumsangebote.“</h3>
+        <button id="theme-toggle">Light Mode</button>
+        <br><br>
+        <!-- Uhranzeige -->
+        <div id="uhr-container" style="font-size: 18px; font-weight: bold;">
+            <span id="uhr"></span> - Cologne, Germany
+        </div>
+        <!-- Google Translate Widget -->
+        <div id="google_translate_element"></div><br><hr><br>
+
+    </header>
+    <br>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="hauptseite.html">Hauptseite</a></li>
+            <li><a href="experience.html">Berufserfahrung</a></li>
+            <li><a href="education.html">Ausbildung</a></li>
+            <li><a href="lzk.html">LZK</a></li>
+            <li><a href="projects.html">Projekte</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+    <br>
+
+    <h2>Skills</h2>
+
+    <section class="erfahrung">
+        <h3 class="absatz">Python</h3>
+        <p class="content">Als Python-Anfänger bringe ich Begeisterung und Lernbereitschaft in die Welt der Programmierung. Ich arbeite an den Grundlagen dieser vielseitigen Sprache und setze mein Wissen bereits in kleinen Projekten ein, um praktische Erfahrungen zu sammeln.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Grundlagen der Programmierung: Verständnis der grundlegenden Syntax und Struktur von Python, einschließlich Variablen, Datentypen und Kontrollstrukturen.</p>
+        <p class="content">Einfache Skripterstellung: Erstellung grundlegender Skripte zur Automatisierung von Aufgaben und Datenverarbeitung.</p>
+        <p class="content">Datenbearbeitung: Erste Erfahrungen mit Bibliotheken wie Pandas zur Bearbeitung und Analyse von Daten.</p>
+        <p class="content">Fehlersuche und Debugging: Lernen, wie man Fehler im Code identifiziert und behebt, um die Funktionalität der Programme sicherzustellen.</p>
+        <p class="content">Ich bin motiviert, meine Python-Kenntnisse kontinuierlich zu erweitern und mich in Richtung fortgeschrittener Programmierung zu entwickeln. Python bietet mir eine solide Grundlage, um meine Fähigkeiten weiter auszubauen und komplexere Projekte zu realisieren.</p>
+        <hr><br>
+        <h3 class="absatz">Java - Erste Schritte in der objektorientierten Programmierung</h3>
+        <p class="content">Als Java-Anfänger arbeite ich daran, die Grundprinzipien und Konzepte der objektorientierten Programmierung zu erlernen. Ich beschäftige mich mit den Grundlagen der Java-Sprache und wende mein Wissen in einfachen Projekten an, um praktische Erfahrungen zu sammeln.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Grundlagen der Java-Syntax: Verständnis der grundlegenden Syntax, Datentypen und Kontrollstrukturen von Java.</p>
+        <p class="content">Objektorientierte Programmierung (OOP): Erste Erfahrungen mit Klassen, Objekten, Vererbung und Polymorphismus.</p>
+        <p class="content">Entwicklung einfacher Anwendungen: Erstellung von grundlegenden Java-Anwendungen und -Programmen zur Festigung der Programmierkenntnisse.</p>
+        <p class="content">Fehlersuche und Debugging: Erlernen von Techniken zur Identifizierung und Behebung von Fehlern im Code.</p>
+        <p class="content">Ich bin engagiert, meine Java-Kenntnisse kontinuierlich zu erweitern und mich in der Softwareentwicklung weiterzuentwickeln. Java bietet mir eine starke Grundlage, um in komplexere Programmierprojekte einzutauchen und meine Fähigkeiten auszubauen.</p>
+        <hr><br>
+        <h3 class="absatz">Microsoft Office - Grundkenntnisse für effiziente Büroarbeit</h3>
+        <p class="content">Als Anfänger im Umgang mit Microsoft Office lerne ich die grundlegenden Funktionen der wichtigsten Office-Anwendungen kennen. Ich setze diese Fähigkeiten ein, um alltägliche Büroaufgaben effizient zu erledigen und meine Arbeitsabläufe zu optimieren.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Word: Erstellung und Formatierung einfacher Dokumente, Nutzung grundlegender Funktionen wie Textverarbeitung und Layoutgestaltung.</p>
+        <p class="content">Excel: Grundlegende Nutzung von Tabellen, Durchführung einfacher Berechnungen, und Erstellung von Diagrammen zur Datenvisualisierung.</p>
+        <p class="content">PowerPoint: Erstellung von Präsentationen mit Text, Bildern und grundlegenden Animationen.</p>
+        <p class="content">Outlook: Verwaltung von E-Mails, Terminen und Kontakten zur effektiven Organisation des Arbeitsalltags.</p>
+        <p class="content">Ich arbeite kontinuierlich daran, meine Microsoft Office-Kenntnisse zu erweitern und komplexere Aufgaben zu bewältigen, um meine Effizienz und Produktivität zu steigern. </p>
+        <hr><br>
+        <h3 class="absatz">Scrum Foundation</h3>
+        <p class="content">Mit einer soliden Grundlage in Scrum kenne ich die wesentlichen Prinzipien und Praktiken dieses agilen Frameworks. Ich nutze Scrum, um die Effizienz von Projekten zu steigern und Teams dabei zu unterstützen, flexibel auf Veränderungen zu reagieren.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Agile Prinzipien: Verständnis der grundlegenden agilen Werte und Prinzipien, die Scrum zugrunde liegen.</p>
+        <p class="content">Scrum-Rollen: Kenntnisse der Rollen im Scrum (Scrum Master, Product Owner, Entwicklungsteam) und deren Verantwortlichkeiten.</p>
+        <p class="content">Scrum-Events: Teilnahme an und Durchführung von Scrum-Events wie Sprint Planning, Daily Stand-up, Sprint Review und Sprint Retrospective.</p>
+        <p class="content">Backlog-Management: Umgang mit Product Backlog und Sprint Backlog zur Priorisierung und Verwaltung von Aufgaben.</p>
+        <p class="content">Ich bin motiviert, mein Wissen in Scrum weiter auszubauen und agile Methoden effektiv in Projekten anzuwenden, um kontinuierliche Verbesserungen und hohe Teamleistung zu fördern.</p>
+        <hr><br>
+        <h3 class="absatz">Projektmanagement - Erste Schritte in der effektiven Projektsteuerung</h3>
+        <p class="content">Als Anfänger im Projektmanagement beginne ich, die Grundlagen der Projektplanung und -steuerung zu erlernen. Ich setze erste Techniken ein, um Projekte erfolgreich zu organisieren und umzusetzen.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Grundlagen der Projektplanung: Erstellung einfacher Projektpläne und Zeitpläne zur Organisation von Aufgaben und Meilensteinen.</p>
+        <p class="content">Teamarbeit: Unterstützung bei der Koordination von Projektteams und Kommunikation zur Sicherstellung eines reibungslosen Arbeitsablaufs.</p>
+        <p class="content">Ich bin motiviert, meine Projektmanagement-Kenntnisse kontinuierlich zu erweitern und mich in der professionellen Projektsteuerung weiterzuentwickeln.</p>
+        <hr><br>
+        <h3 class="absatz">Zoom Webinars - Erste Schritte in der Durchführung von Online-Veranstaltungen</h3>
+        <p class="content">Als Anfänger im Bereich Zoom Webinars lerne ich, wie man Online-Veranstaltungen effektiv plant und durchführt. Ich nutze die grundlegenden Funktionen von Zoom, um Webinare zu organisieren und eine positive Teilnehmererfahrung zu gewährleisten.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Webinar-Setup: Grundlegende Einrichtung und Konfiguration von Zoom-Webinaren, einschließlich der Planung und Einladung von Teilnehmern.</p>
+        <p class="content">Moderation: Durchführung einfacher Webinare, Nutzung grundlegender Funktionen wie Bildschirmfreigabe und Chat.</p>
+        <p class="content">Technische Grundlagen: Verständnis der grundlegenden technischen Anforderungen für ein reibungsloses Webinar, wie Audio- und Videoeinstellungen.</p>
+        <p class="content">Ich bin motiviert, meine Fähigkeiten in der Nutzung von Zoom Webinars kontinuierlich auszubauen und komplexere Funktionen zu erlernen, um professionelle Online-Veranstaltungen durchzuführen.</p>
+        <hr><br>
+        <h3 class="absatz">Microsoft Teams - Effiziente Zusammenarbeit und Kommunikation</h3>
+        <p class="content">Mit Kenntnissen in Microsoft Teams unterstütze ich die effektive Zusammenarbeit und Kommunikation innerhalb von Teams und Projekten. Ich nutze die Funktionen von Teams, um die Produktivität zu steigern und eine reibungslose Zusammenarbeit zu gewährleisten.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Chats und Besprechungen: Nutzung von Chats und Video-Calls für die tägliche Kommunikation und Durchführung von virtuellen Meetings.</p>
+        <p class="content">Dateifreigabe und Zusammenarbeit: Teilen und gemeinsame Bearbeitung von Dateien direkt innerhalb von Teams zur Verbesserung der Zusammenarbeit.</p>
+        <p class="content">Ich bin engagiert, meine Fähigkeiten in Microsoft Teams weiter auszubauen, um die Zusammenarbeit und Kommunikation in Teams noch effizienter zu gestalten.</p>
+        <hr><br>
+        <h3 class="absatz">Office-Management - Erste Schritte in der Büroorganisation</h3>
+        <p class="content">Als Anfänger im Office-Management lerne ich die grundlegenden Aufgaben und Techniken zur effektiven Büroorganisation und -verwaltung. Ich arbeite daran, meine Fähigkeiten zu entwickeln, um einen reibungslosen Büroalltag zu unterstützen.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Büroorganisation: Grundlegende Planung und Organisation von Büroabläufen, einschließlich Terminverwaltung und Dokumentenablage.</p>
+        <p class="content">Kommunikation: Unterstützung bei der Bearbeitung von Korrespondenz und der Koordination von Meetings.</p>
+        <p class="content">Datenverwaltung: Erste Erfahrungen in der Verwaltung und Pflege von Daten und Akten.</p>
+        <p class="content">Bürosoftware: Nutzung grundlegender Bürosoftware wie Microsoft Office zur Erstellung von Dokumenten und Tabellen.</p>
+        <p class="content">Ich bin motiviert, meine Office-Management-Kenntnisse kontinuierlich auszubauen, um die Effizienz und Organisation im Büro weiter zu verbessern.</p>
+        <hr><br>
+        <h3 class="absatz">HTML/CSS - Grundlagen der Webentwicklung</h3>
+        <p class="content">Als Anfänger in HTML und CSS arbeite ich daran, die Grundlagen der Webentwicklung zu verstehen und anzuwenden. Ich lerne, wie man einfache, ansprechende Webseiten erstellt und gestaltet.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong>></p>
+        <p class="content">HTML: Erstellung von strukturierten Webseiten durch die Nutzung grundlegender HTML-Tags und -Elemente.</p>
+        <p class="content">CSS: Anwendung von CSS zur Gestaltung und Layout-Anpassung von Webseiten, einschließlich Farb- und Schriftartenwahl sowie Layout-Management.</p>
+        <p class="content">Responsive Design: Erste Erfahrungen im Erstellen von responsiven Webseiten, die sich an verschiedene Bildschirmgrößen und Geräte anpassen.</p>
+        <p class="content">Fehlerbehebung: Identifizierung und Behebung grundlegender Fehler in HTML- und CSS-Code zur Verbesserung der Webseitenfunktionalität.</p>
+        <p class="content">Ich bin engagiert, meine HTML- und CSS-Kenntnisse kontinuierlich zu erweitern, um komplexere und optisch ansprechendere Webseiten zu erstellen.</p>
+        <hr><br>
+        <h3 class="absatz">JavaScript - Erste Schritte in der dynamischen Webentwicklung</h3>
+        <p class="content">Als Anfänger im Bereich JavaScript arbeite ich daran, die Grundlagen der Programmierung mit JavaScript zu erlernen und anzuwenden, um interaktive und dynamische Webanwendungen zu erstellen.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong>></p>
+        <p class="content">Grundlagen der Syntax: Verständnis der grundlegenden JavaScript-Syntax, einschließlich Variablen, Datentypen und Kontrollstrukturen.</p>
+        <p class="content">Funktionen und Events: Erstellung und Nutzung von Funktionen, sowie Handling von Benutzerinteraktionen und Events auf Webseiten.</p>
+        <p class="content">DOM-Manipulation: Erste Erfahrungen in der Manipulation des Document Object Model (DOM) zur dynamischen Änderung von Webseiteninhalten.</p>
+        <p class="content">Debugging: Grundlegende Fehlersuche und -behebung in JavaScript-Code, um die Funktionalität von Webanwendungen zu verbessern.</p>
+        <p class="content">Ich bin motiviert, meine JavaScript-Kenntnisse kontinuierlich zu erweitern und komplexere Funktionen und Anwendungen zu entwickeln, um interaktive und benutzerfreundliche Webseiten zu erstellen.</p>
+        <hr><br>
+        <h3 class="absatz">Fachliches Englisch - Kommunikation in beruflichen Kontexten</h3>
+        <p class="content">Mit grundlegenden Kenntnissen im fachlichen Englisch bin ich in der Lage, präzise und effektive Kommunikation in beruflichen und technischen Kontexten zu führen. Ich nutze mein Wissen, um Fachbegriffe korrekt anzuwenden und in englischer Sprache zu arbeiten.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Fachterminologie: Verständnis und Anwendung spezifischer Fachbegriffe und Jargon in meiner Branche.</p>
+        <p class="content">Berufliche Kommunikation: Erstellung und Interpretation von geschäftlichen Dokumenten, E-Mails und Berichten auf Englisch.</p>
+        <p class="content">Technische Dokumentation: Lesen und Verfassen von technischen Dokumentationen, Anleitungen und Handbüchern in englischer Sprache.</p>
+        <p class="content">Ich bin bestrebt, meine Kenntnisse im fachlichen Englisch weiter auszubauen, um meine Kommunikationsfähigkeiten in internationalen und beruflichen Kontexten zu verbessern.</p>
+        <hr><br>
+        <h3 class="absatz">Datenbanken/SQL - Grundlagen der Datenverwaltung und -abfrage</h3>
+        <p class="content">Als Anfänger im Bereich Datenbanken und SQL arbeite ich daran, die grundlegenden Konzepte der Datenbankverwaltung und -abfrage zu verstehen und anzuwenden. Ich nutze SQL, um Daten effizient zu verwalten und zu manipulieren.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Datenbankgrundlagen: Verständnis der grundlegenden Datenbankkonzepte wie Tabellen, Datensätze und Beziehungen.</p>
+        <p class="content">SQL-Abfragen: Erstellung und Ausführung grundlegender SQL-Abfragen zur Datenabfrage und -manipulation, einschließlich SELECT, INSERT, UPDATE und DELETE.</p>
+        <p class="content">Datenmodellierung: Erste Schritte in der Datenmodellierung zur Strukturierung von Daten in relationalen Datenbanken.</p>
+        <p class="content">Fehlersuche: Grundlegende Fehlersuche und -behebung in SQL-Abfragen, um korrekte Ergebnisse zu gewährleisten.</p>
+        <p class="content">Ich bin motiviert, meine Kenntnisse in Datenbanken und SQL kontinuierlich zu erweitern, um komplexere Datenbankaufgaben zu bewältigen und effektive Datenlösungen zu entwickeln.</p>
+        <hr><br>
+        <h3 class="absatz">Client-Systeme - Verwaltung und Unterstützung von Benutzerarbeitsplätzen</h3>
+        <p class="content">Mit grundlegenden Kenntnissen in Client-Systemen unterstütze ich die Verwaltung und Wartung von Benutzerarbeitsplätzen, um sicherzustellen, dass diese effizient und zuverlässig arbeiten.</p>
+        <p class="content"><strong>Meine aktuellen Kenntnisse:</strong></p>
+        <p class="content">Systemkonfiguration: Einrichtung und Konfiguration von Betriebssystemen und Anwendungen auf Client-Geräten.</p>
+        <p class="content">Fehlerbehebung: Unterstützung bei der Diagnose und Behebung von Problemen auf Client-Systemen, einschließlich Hardware- und Softwarefehlern.</p>
+        <p class="content">Benutzerverwaltung: Verwaltung von Benutzerkonten und Berechtigungen zur Sicherstellung eines reibungslosen Zugriffs auf benötigte Ressourcen.</p>
+        <p class="content">Sicherheitsmaßnahmen: Implementierung grundlegender Sicherheitsmaßnahmen wie Updates, Patches und Antiviren-Software zum Schutz der Client-Systeme.</p>
+        <p class="content">Ich arbeite daran, meine Kenntnisse in der Verwaltung und Unterstützung von Client-Systemen weiter zu vertiefen, um eine optimale Systemleistung und -sicherheit zu gewährleisten.</p>
+    </section>
+    <br>
+
+     <!-- Neues Links-Segment -->
+     <section class="links">
+        <h2>LINKS</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/friedrich-bader-0a9682308/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.xing.com/profile/Friedrich_Bader6/web_profiles?expandNeffi=true" target="_blank">Xing</a></li>
+            <li><a href="https://main--friedrichbader.netlify.app/" target="_blank">Meine erste Seite</a></li>
+            <li><a href="https://friedrichbader.jimdofree.com/" target="_blank">Meine Jimdo Seite</a></li>
+            <li><a href="https://github.com/gothlivion" target="_blank">GitHub</a></li>
+            <li><a href="https://ra88it.de" target="_blank">Stephan Pfeifer</a></li>
+        </ul>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div style="text-align: center; margin: 20px 0;">
+        <button id="onclick" onclick="scrollToTop()">Nach oben scrollen</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Friedrich Bader. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="skills.js"></script>
+    <script>
+        function aktualisiereUhr() {
+            // Erstelle ein neues Datum-Objekt
+            var jetzt = new Date();
+            // Hole die Stunden, Minuten und Sekunden
+            var stunden = jetzt.getHours();
+            var minuten = jetzt.getMinutes();
+            var sekunden = jetzt.getSeconds();
+            
+            // Formatiere die Zeit (mit führenden Nullen)
+            minuten = minuten < 10 ? '0' + minuten : minuten;
+            sekunden = sekunden < 10 ? '0' + sekunden : sekunden;
+    
+            // Zeige die Uhrzeit im Uhr-Div an
+            var uhrAnzeige = stunden + ':' + minuten + ':' + sekunden;
+            document.getElementById('uhr').textContent = uhrAnzeige;
+        }
+    
+        // Funktion sofort aufrufen, um die Zeit sofort zu zeigen
+        aktualisiereUhr();
+        // Aktualisiere die Zeit jede Sekunde
+        setInterval(aktualisiereUhr, 1000);
+    </script>
+</body>
+</html>

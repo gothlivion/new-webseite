@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passworteingabe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="login">
+            <br><br>
+            <!-- Uhranzeige -->
+            <div id="uhr-container" style="font-size: 18px; font-weight: bold;">
+                <span id="uhr"></span> - Cologne, Germany
+            </div>
+            <h1>Sie versuchen auf eine private Seite zugreifen</h1>
+            <h1>Bitte Passwort eingeben</h1>
+            <input type="password" id="password" placeholder="Passwort eingeben" onkeypress="checkEnter(event)">
+            <button onclick="checkPassword()">Einloggen</button>
+            <p id="message" class="hidden"></p>
+        </section>
+
+        <section class="contact">
+            <h2>Kontaktieren Sie mich, wenn Sie kein Passwort haben über gothlivion@gmail.com</h2>
+            <p>
+                <a href="mailto:gothlivion@gmail.com">Jetzt E-Mail senden</a>
+            </p>
+        </section>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const passwordInput = document.getElementById('password').value;
+            const message = document.getElementById('message');
+
+            const correctPassword = "0000"; // Ändere dies zu deinem gewünschten Passwort
+
+            if (passwordInput === correctPassword) {
+                window.location.href = 'hauptseite.html'; // Weiterleitung zur Hauptseite
+            } else {
+                message.textContent = "Falsches Passwort. Bitte erneut versuchen.";
+                message.classList.remove('hidden');
+            }
+        }
+
+        function checkEnter(event) {
+            if (event.key === "Enter") {
+                checkPassword(); // Passwortüberprüfung ausführen, wenn Enter gedrückt wird
+            }
+        }
+
+    </script>
+    <script>
+        function aktualisiereUhr() {
+            // Erstelle ein neues Datum-Objekt
+            var jetzt = new Date();
+            // Hole die Stunden, Minuten und Sekunden
+            var stunden = jetzt.getHours();
+            var minuten = jetzt.getMinutes();
+            var sekunden = jetzt.getSeconds();
+            
+            // Formatiere die Zeit (mit führenden Nullen)
+            minuten = minuten < 10 ? '0' + minuten : minuten;
+            sekunden = sekunden < 10 ? '0' + sekunden : sekunden;
+    
+            // Zeige die Uhrzeit im Uhr-Div an
+            var uhrAnzeige = stunden + ':' + minuten + ':' + sekunden;
+            document.getElementById('uhr').textContent = uhrAnzeige;
+        }
+    
+        // Funktion sofort aufrufen, um die Zeit sofort zu zeigen
+        aktualisiereUhr();
+        // Aktualisiere die Zeit jede Sekunde
+        setInterval(aktualisiereUhr, 1000);
+    </script>
+</body>
+</html>
+
+
+
+

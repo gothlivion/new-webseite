@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friedrich Bader | Fachinformatiker Anwendungsentwicklung</title>
+    <link rel="stylesheet" href="lzk.css">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'de'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'de'}, 'google_translate_element');
+        }
+
+        // Funktion zum Ein- und Ausklappen von Inhalten
+        function toggleContent(element) {
+            // Finde alle nachfolgenden <p class="content">-Elemente
+            let nextElement = element.nextElementSibling;
+            while (nextElement && !nextElement.classList.contains('absatz')) {
+                if (nextElement.classList.contains('content')) {
+                    nextElement.style.display = nextElement.style.display === 'none' ? 'block' : 'none';
+                }
+                nextElement = nextElement.nextElementSibling;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Friedrich Bader</h1>
+        <h2>Fachinformatiker Anwendungsentwicklung</h2>
+        <h3>"Solange dieser Satz hier steht, bin ich offen für spannende Praktikumsangebote.“</h3>
+        <button id="theme-toggle">Light Mode</button>
+        <br><br>
+        <!-- Uhranzeige -->
+        <div id="uhr-container" style="font-size: 18px; font-weight: bold;">
+            <span id="uhr"></span> - Cologne, Germany
+        </div>
+        <!-- Google Translate Widget -->
+        <div id="google_translate_element"></div><br><hr><br>
+
+    </header>
+    <br>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="hauptseite.html">Hauptseite</a></li>
+            <li><a href="experience.html">Berufserfahrung</a></li>
+            <li><a href="education.html">Ausbildung</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projekte</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+        <!-- Mobile Menu Icon -->
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+    <br>
+
+    <h2>Lernzielkontrollen</h2>
+
+    <section class="erfahrung">
+        <h3 class="absatz" id="average-score" onclick="toggleContent(this)">Durchschnittsbewertung aller LZK (wird ständig aktualisiert) - 86,17 %</h3>
+        <p class="content" style="display: none;"><strong>Auf dieser Seite wird der Durchschnittswert aller Lernzielkontrollen automatisch berechnet und angezeigt.</strong></p>
+        <p class="content" style="display: none;">Durch diese automatische Aktualisierung wird der Durchschnittswert immer aktuell angezeigt, auch wenn neue Lernzielkontrollen hinzugefügt oder bestehende Bewertungen geändert werden. Dies ermöglicht eine präzise und zeitnahe Übersicht über meine Leistungen.</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF01V2 Das Unternehmen und die eigene Rolle im Betrieb  
+            <p class="score">Gut (89,63 %)</p></h3>
+        <p class="content" style="display: none;">IT-Ausbildungsberufe und Beteiligte im dualen System</p>
+        <p class="content" style="display: none;">Die eigene Rolle im Betrieb</p>
+        <p class="content" style="display: none;">Arbeitsrechtliche Mitbestimmung im Betrieb</p>
+        <p class="content" style="display: none;">Berufs- und Lebensplanung, das Modellunternehmen</p>
+        <p class="content" style="display: none;">Betrieb und Unternehmen im Umfeld</p>
+        <p class="content" style="display: none;">Zusammenarbeit mit Behörden und Organisationen</p>
+        <p class="content" style="display: none;">Wirtschaftskreislauf</p>
+        <p class="content" style="display: none;">Marktsituationen beschreiben</p>
+        <p class="content" style="display: none;">Den Ausbildungsbetrieb präsentieren</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF02V2 Arbeitsplatz nach Kundenwunsch ausstatten 
+            <p class="score">Gut (85,00 %)</p></h3>
+        <p class="content" style="display: none;">Grundfunktionen des Computers</p>
+        <p class="content" style="display: none;">Marktgängige IT-Systeme vorstellen</p>
+        <p class="content" style="display: none;">Auswahlkriterien zu IT-Produkten allgemein unterscheiden</p>
+        <p class="content" style="display: none;">Umweltschutz und Green-IT als wichtige IT-Ziele darstellen</p>
+        <p class="content" style="display: none;">IT-Sicherheit von IT-Systemen, Informations- und Datenschutz erläutern</p>
+        <p class="content" style="display: none;">Komponenten eines Arbeitsplatzcomputers unterscheiden</p>
+        <p class="content" style="display: none;">Netzteile beschreiben und unterscheiden</p>
+        <p class="content" style="display: none;">Datenträger beschreiben und unterscheiden</p>
+        <p class="content" style="display: none;">Peripheriegeräte erläutern und unterscheiden</p>
+        <p class="content" style="display: none;">Angebotsvergleiche und Nutzwertanalyse durchführen</p>
+        <p class="content" style="display: none;">Finanzierungsangebote einholen und vergleichen</p>
+        <p class="content" style="display: none;">Den Bestellprozess erläutern</p>
+        <p class="content" style="display: none;">Angebotserstellung für den Kunden</p>
+        <p class="content" style="display: none;">Vertragsabschluss durchführen</p>
+        <p class="content" style="display: none;">Systeme zusammenstellen und liefern</p>
+        <p class="content" style="display: none;">Hardware und Betriebssysteme installieren, konfigurieren und anpassen</p>
+        <p class="content" style="display: none;">IT-Systeme, Geräte und Betriebsmittel übergeben und adressatengerecht erläutern</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF03 Clients in Netzwerk einbinden 
+            <p class="score">Gut (89,71 %)</p></h3>
+        <p class="content" style="display: none;">Hauptbestandteile von Computernetzen unterscheiden</p>
+        <p class="content" style="display: none;">Eine Einführung in das Netzwerk des Ausbildungsbetriebs geben</p>
+        <p class="content" style="display: none;">Grundlagen eines Computernetzwerkes erklären</p>
+        <p class="content" style="display: none;">Selbstständig die Integration von Clients in ein Netzwerk planen und durchführen</p>
+        <p class="content" style="display: none;">Netzwerk-Komponenten auswählen und konfigurieren</p>
+        <p class="content" style="display: none;">Grundlagen der Daten- und Netzwerksicherheit beschreiben</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF09V2 Netzwerke und Dienste bereitstellen 
+            <p class="score">Ausreichend (66,25 %)</p></h3>
+        <p class="content" style="display: none;">Netzwerkkonfiguration</p>
+        <p class="content" style="display: none;">IP-Adressierung</p>
+        <p class="content" style="display: none;">Netzwerkdienste</p>
+        <p class="content" style="display: none;">Netzwerksicherheit</p>
+        <p class="content" style="display: none;">Troubleshooting</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF04V2 Schutzbedarfsanalyse im eigenen Arbeitsbereich durchführen 
+            <p class="score">Gut (84,85 %)</p></h3>
+        <p class="content" style="display: none;">Risikoanalyse</p>
+        <p class="content" style="display: none;">Schutzbedarf ermitteln</p>
+        <p class="content" style="display: none;">Sicherheitsanforderungen festlegen</p>
+        <p class="content" style="display: none;">Datenschutz und Datensicherheit</p>
+        <p class="content" style="display: none;">Maßnahmen umsetzen</p>
+        <p class="content" style="display: none;">Überprüfung und Anpassung</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF05V2 Software zur Verwaltung von Daten anpassen 
+            <p class="score">Befriedigend (73,33 %)</p></h3>
+        <p class="content" style="display: none;">Datenbankgrundlagen</p>
+        <p class="content" style="display: none;">Datenstrukturen anpassen</p>
+        <p class="content" style="display: none;">Datenfilterung und -sortierung</p>
+        <p class="content" style="display: none;">Benutzeroberfläche anpassen</p>
+        <p class="content" style="display: none;">Berichtsfunktionen und Abfragen</p>
+        <p class="content" style="display: none;">Schnittstellen und Datenexport</p>
+        <p class="content" style="display: none;">Anpassung an betriebliche Anforderungen</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF07V2 Cyber-physische Systeme ergänzen 
+            <p class="score">Sehr gut (95,98 %)</h3>
+        <p class="content" style="display: none;">Grundlagen von cyber-physischen Systemen (CPS)</p>
+        <p class="content" style="display: none;">Verbindung von physischen und digitalen Komponenten</p>
+        <p class="content" style="display: none;">Kommunikation und Vernetzung</p>
+        <p class="content" style="display: none;">Automatisierung und Steuerung</p>
+        <p class="content" style="display: none;">Integration in betriebliche Prozesse</p>
+        <p class="content" style="display: none;">Fehlerbehebung und Wartung</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF08V2 Daten systemübergreifend bereitstellen 
+            <p class="score">Befriedigend (80,77 %)</p></h3>
+        <p class="content" style="display: none;">Grundlagen der Datenbereitstellung</p>
+        <p class="content" style="display: none;">Interoperabilität zwischen Systemen</p>
+        <p class="content" style="display: none;">Datenformate und Standards</p>
+        <p class="content" style="display: none;">Netzwerkbasierte Datenübertragung</p>
+        <p class="content" style="display: none;">Sicherheitsaspekte bei der Datenübertragung</p>
+        <p class="content" style="display: none;">Daten in Cloud-Umgebungen bereitstellen</p>
+        <p class="content" style="display: none;">Fehlerbehebung und Monitoring</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF06V2 Serviceanfragen bearbeiten 
+            <p class="score">Sehr gut (96,21 %)</p></h3>
+        <p class="content" style="display: none;">Grundlagen des IT-Supports</p>
+        <p class="content" style="display: none;">Erfassung und Priorisierung von Anfragen</p>
+        <p class="content" style="display: none;">Problemlösungsstrategien</p>
+        <p class="content" style="display: none;">Kommunikation mit Kunden oder Nutzern</p>
+        <p class="content" style="display: none;">Dokumentation und Nachverfolgung</p>
+        <p class="content" style="display: none;">Service-Level-Agreements (SLAs)</p>
+        <p class="content" style="display: none;">Lösung von Standardproblemen</p>
+        <p class="content" style="display: none;">Tools und Systeme zur Serviceanfragenbearbeitung</p>
+        <p class="content" style="display: none;">Eskalation von Serviceanfragen</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF-ZQ3a Agile Scrum Foundation 
+            <p class="score">(70,00 %)</p>( Hier spielt die Bewertung keine Rolle, da im Zertifikat es sowieso nicht angezeigt wird. Trotzdem habe ich die Bewertung übernommen, um Durchschnitt aller Bewertungen aufrechthalten. )</h3>
+        <p class="content" style="display: none;">Grundlagen der Agilität</p>
+        <p class="content" style="display: none;">Scrum-Framework</p>
+        <p class="content" style="display: none;">Scrum-Rollen und ihre Verantwortlichkeiten</p>
+        <p class="content" style="display: none;">Sprints und Iterationen</p>
+        <p class="content" style="display: none;">User Stories und Backlogs</p>
+        <p class="content" style="display: none;">Daily Scrum (Daily Stand-up)</p>
+        <p class="content" style="display: none;">Scrum-Events und deren Bedeutung</p>
+        <p class="content" style="display: none;">Inkrementelles Arbeiten</p>
+        <p class="content" style="display: none;">Verbesserung durch Retrospektiven</p>
+        <p class="content" style="display: none;">Agiles Mindset</p>
+        <hr><br>
+        <h3 class="absatz" onclick="toggleContent(this)">LF-VT1 Client Systeme Windows 10
+        <p class="score">Sehr gut (95,00 %)</p></h3>
+        <p class="content" style="display: none;">Installation von Windows</p>
+        <p class="content" style="display: none;">Einführung in Windows</p>
+        <p class="content" style="display: none;">Windows Editionen und Anforderungen</p>
+        <p class="content" style="display: none;">Installationsmethoden</p>
+        <p class="content" style="display: none;">Migrieren auf aktuelle Windowsversionen</p>
+        <p class="content" style="display: none;">Nachinstallationsschritte und Personalisierung</p>
+        <p class="content" style="display: none;">Konfigurieren und Anpassen des Start Menu</p>
+        <p class="content" style="display: none;">Allgemeine Konfigurationsoptionen</p>
+        <p class="content" style="display: none;">Erweiterte Konfigurationsmethoden</p>
+        <p class="content" style="display: none;">Verwalten von Treibern und Peripherie</p>
+        <p class="content" style="display: none;">Speicherkonfiguration</p>
+        <p class="content" style="display: none;">Verwalten des lokalen Speichers</p>
+        <p class="content" style="display: none;">Verwalten von Festplatten und Dateisystemen</p>
+        <p class="content" style="display: none;">Verwalten von Speicherplätzen</p>
+        <p class="content" style="display: none;">Konfigurieren des Netzwerks</p>
+        <p class="content" style="display: none;">IP-Netzwerk Einstellungen</p>
+        <p class="content" style="display: none;">Namensauflösung einrichten</p>
+        <p class="content" style="display: none;">Drahtloszugang einrichten</p>
+        <p class="content" style="display: none;">Konfiguration von Autorisierung und Authentifizierung</p>
+        <p class="content" style="display: none;">Umgang mit Benutzern und Gruppen</p>
+        <p class="content" style="display: none;">Konfiguration der Benutzerkontensteuerung</p>
+        <p class="content" style="display: none;">Einrichtung von Windowsfreigaben</p>
+        <p class="content" style="display: none;">Wartung von Windows 10</p>
+        <p class="content" style="display: none;">Umgang mit dem Remote Desktop</p>
+        <p class="content" style="display: none;">Fernwartung mit der PowerShell</p>
+        <p class="content" style="display: none;">Überwachung und Fehlerbehebung bei der Computerleistung</p>
+        <p class="content" style="display: none;">Anwenden von Updates für Windows und Anwendungen</p>
+        <p class="content" style="display: none;">Fehlerbehebung</p>
+        <p class="content" style="display: none;">Wiederherstellen von Dateien</p>
+        <p class="content" style="display: none;">Wartung von Programmen</p>
+        <p class="content" style="display: none;">Startprobleme beheben</p>
+        <p class="content" style="display: none;">Beheben von Problemen in Betriebssystemdiensten</p>
+        <p class="content" style="display: none;">Beheben von Treiberproblemen</p>
+        <p class="content" style="display: none;">Erkennen von Hardwareproblemen unter Windows</p>
+    </section>
+    <br>
+
+     <!-- Neues Links-Segment -->
+     <section class="links">
+        <h2>LINKS</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/friedrich-bader-0a9682308/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.xing.com/profile/Friedrich_Bader6/web_profiles?expandNeffi=true" target="_blank">Xing</a></li>
+            <li><a href="https://main--friedrichbader.netlify.app/" target="_blank">Meine erste Seite</a></li>
+            <li><a href="https://friedrichbader.jimdofree.com/" target="_blank">Meine Jimdo Seite</a></li>
+            <li><a href="https://github.com/gothlivion" target="_blank">GitHub</a></li>
+            <li><a href="https://ra88it.de" target="_blank">Stephan Pfeifer</a></li>
+        </ul>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div style="text-align: center; margin: 20px 0;">
+        <button id="onclick" onclick="scrollToTop()">Nach oben scrollen</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Friedrich Bader. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="lzk.js"></script>
+    <script>
+        function aktualisiereUhr() {
+            // Erstelle ein neues Datum-Objekt
+            var jetzt = new Date();
+            // Hole die Stunden, Minuten und Sekunden
+            var stunden = jetzt.getHours();
+            var minuten = jetzt.getMinutes();
+            var sekunden = jetzt.getSeconds();
+            
+            // Formatiere die Zeit (mit führenden Nullen)
+            minuten = minuten < 10 ? '0' + minuten : minuten;
+            sekunden = sekunden < 10 ? '0' + sekunden : sekunden;
+    
+            // Zeige die Uhrzeit im Uhr-Div an
+            var uhrAnzeige = stunden + ':' + minuten + ':' + sekunden;
+            document.getElementById('uhr').textContent = uhrAnzeige;
+        }
+    
+        // Funktion sofort aufrufen, um die Zeit sofort zu zeigen
+        aktualisiereUhr();
+        // Aktualisiere die Zeit jede Sekunde
+        setInterval(aktualisiereUhr, 1000);
+    </script>
+</body>
+</html>
